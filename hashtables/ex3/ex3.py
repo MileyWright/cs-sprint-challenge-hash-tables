@@ -3,7 +3,16 @@ def intersection(arrays):
     YOUR CODE HERE
     """
     # Your code here
+    table = {}   #hashtable
+    result = [] #return array
 
+    for a in arrays:
+        for num in a:
+            if num not in table:
+                table[num] = None
+                
+            elif num not in result:
+                    result.append(num)
     return result
 
 
